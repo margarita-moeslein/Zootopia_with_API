@@ -11,7 +11,7 @@ load_dotenv()
 
 def fetch_data(name: str) -> List[Dict[str, Any]]:
     """
-    Fetches animals data from the API by the given name.
+    Fetches animals data from the API.
 
     Returns:
          A list of animals.
