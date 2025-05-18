@@ -11,8 +11,10 @@ load_dotenv()
 
 def fetch_data(name: str) -> List[Dict[str, Any]]:
     """
-    Returns list of animal data retrieved from API by given name.
-    Handles basic request errors.
+    Fetches animals data from the API by the given name.
+
+    Returns:
+         A list of animals.
     """
     api_url = API_URL.format(name)
     api_key = os.getenv("API_KEY")
@@ -27,5 +29,7 @@ def fetch_data(name: str) -> List[Dict[str, Any]]:
     except requests.exceptions.RequestException as e:
         print(f"API request failed: {e}")
         return []
+
+
 
 
