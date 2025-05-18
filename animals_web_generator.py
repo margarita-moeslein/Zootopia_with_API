@@ -33,7 +33,7 @@ def generate_html(file_path: str, animals_data: List[Dict[str, Any]], animal_nam
         template_content = fileobj.read()
 
     if not animals_data:
-        output = f'<h2>The animal "{animal_name}" doesn\'t exist.</h2>'
+        output = f"<h2>The animal '{animal_name}' doesn't exist.</h2>"
     else:
         output = ''.join(serialize_animal(animal) for animal in animals_data)
 
@@ -42,4 +42,4 @@ def generate_html(file_path: str, animals_data: List[Dict[str, Any]], animal_nam
     with open('animals.html', 'w') as fileobj:
         fileobj.write(html_content)
 
-    print(f"Website was successfully generated to the file animals.html.")
+    print("Website was successfully generated to the file animals.html.")

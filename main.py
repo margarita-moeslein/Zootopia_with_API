@@ -1,5 +1,3 @@
-from typing import Any, Dict, List
-
 from data_fetcher import fetch_data
 from animals_web_generator import generate_html
 from console_printer import print_animal_info
