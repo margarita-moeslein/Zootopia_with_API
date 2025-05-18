@@ -49,17 +49,6 @@ You will be prompted to enter an animal name (e.g., Fox, Elephant, Monkey).
    The website will contain animal "cards" showing name, diet, location, and type.
    If the animal is not found, a friendly error message will be shown in the HTML.
 
-## 📂 Project Structure
-
-.
-├── main.py
-├── data_fetcher.py
-├── animals_web_generator.py
-├── console_printer.py
-├── animals_template.html
-├── .env
-├── requirements.txt
-└── README.md
 
 ## 📄 License
    This project is for educational use and part of the Masterschool bootcamp program. 
